@@ -3,9 +3,20 @@
 * https://www.googleapis.com/books/v1/volumes?q=##ISBN##
 * https://www.googleapis.com/books/v1/volumes?q=9781452140483
 * https://www.googleapis.com/books/v1/volumes?q=isbn:9781452140483
+* https://developers.google.com/books/docs/v1/using
 
 Para pegar informaçoes específicas, olhar os static links:
 * https://developers.google.com/books/docs/static-links
+* 
+
+PHP
+* https://github.com/google/google-api-php-client/tree/master/examples
+* https://github.com/google/google-api-php-client/blob/master/src/Google/Service/Books.php
+* https://developers.google.com/api-client-library/php/
+* http://stackoverflow.com/questions/19811587/printing-google-books-api-information-using-php --> Exemplo bem simples sem precisar de libs externas
+
+JS
+* https://developers.google.com/api-client-library/javascript/samples/samples
 * 
 
 ##Lendo o código de barras##
