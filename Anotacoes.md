@@ -28,3 +28,7 @@ JS
 * https://github.com/zxing/zxing/wiki/Scanning-Via-Intent
 * http://zxing.github.io/zxing/apidocs/com/google/zxing/integration/android/IntentIntegrator.html
 * 
+
+##URLs de Pesquisa##
+* http://lfrbcorrea.esy.es/minhaLivraria.php?action=prices&isbn=9788535255645 --> Preços
+* http://lfrbcorrea.esy.es/minhaLivraria.php?action=bookInfo&isbn=9788535255645 --> Informações sobre o livro
