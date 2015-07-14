@@ -10,14 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2d936bc-3420-4c9c-8d7c-a6852f0f3f72" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/AccessInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Book.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/IndustryIdentifier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Item.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/ReadingMode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/SaleInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/VolumeInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MinhaLivraria.iws" />
@@ -39,16 +39,246 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91847825">
-              <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="219" column="47" selection-start-line="219" selection-start-column="37" selection-end-line="219" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4415#4497#0" expanded="false" />
-                <element signature="e#5384#5385#0" expanded="true" />
-                <element signature="e#5439#5440#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0567011">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1268#1269#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1357#1358#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1438#1439#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1559#1560#0" expanded="true" />
+                <element signature="e#1600#1601#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
+                <element signature="e#1733#1734#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/AccessInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#AccessInfo#0;class#AccessInfo#0" expanded="false" />
+                <element signature="method#AccessInfo#1;class#AccessInfo#0" expanded="false" />
+                <element signature="e#2492#2493#0" expanded="true" />
+                <element signature="e#2522#2523#0" expanded="true" />
+                <element signature="e#2568#2569#0" expanded="true" />
+                <element signature="e#2606#2607#0" expanded="true" />
+                <element signature="e#2644#2645#0" expanded="true" />
+                <element signature="e#2678#2679#0" expanded="true" />
+                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="e#2778#2779#0" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#2901#2902#0" expanded="true" />
+                <element signature="e#2945#2946#0" expanded="true" />
+                <element signature="e#2984#2985#0" expanded="true" />
+                <element signature="e#3019#3020#0" expanded="true" />
+                <element signature="e#3076#3077#0" expanded="true" />
+                <element signature="e#3124#3125#0" expanded="true" />
+                <element signature="e#3173#3174#0" expanded="true" />
+                <element signature="e#3218#3219#0" expanded="true" />
+                <element signature="e#3405#3406#0" expanded="true" />
+                <element signature="e#3444#3445#0" expanded="true" />
+                <element signature="e#3607#3608#0" expanded="true" />
+                <element signature="e#3645#3646#0" expanded="true" />
+                <element signature="e#3802#3803#0" expanded="true" />
+                <element signature="e#3838#3839#0" expanded="true" />
+                <element signature="e#3896#3897#0" expanded="true" />
+                <element signature="e#3946#3947#0" expanded="true" />
+                <element signature="e#3989#3990#0" expanded="true" />
+                <element signature="e#4028#4029#0" expanded="true" />
+                <element signature="e#4194#4195#0" expanded="true" />
+                <element signature="e#4236#4237#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaleInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/SaleInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#876#877#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1028#1029#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VolumeInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/VolumeInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="316" selection-start-line="24" selection-start-column="316" selection-end-line="24" selection-end-column="316" />
+              <folding>
+                <element signature="method#VolumeInfo#0;class#VolumeInfo#0" expanded="false" />
+                <element signature="method#VolumeInfo#1;class#VolumeInfo#0" expanded="false" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
+                <element signature="e#1654#1655#0" expanded="true" />
+                <element signature="e#1688#1689#0" expanded="true" />
+                <element signature="e#1724#1725#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
+                <element signature="e#1802#1803#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
+                <element signature="e#1880#1881#0" expanded="true" />
+                <element signature="e#1916#1917#0" expanded="true" />
+                <element signature="e#1974#1975#0" expanded="true" />
+                <element signature="e#2024#2025#0" expanded="true" />
+                <element signature="e#2084#2085#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="e#2316#2317#0" expanded="true" />
+                <element signature="e#2351#2352#0" expanded="true" />
+                <element signature="e#2412#2413#0" expanded="true" />
+                <element signature="e#2460#2461#0" expanded="true" />
+                <element signature="e#2496#2497#0" expanded="true" />
+                <element signature="e#2528#2529#0" expanded="true" />
+                <element signature="e#2578#2579#0" expanded="true" />
+                <element signature="e#2620#2621#0" expanded="true" />
+                <element signature="e#2659#2660#0" expanded="true" />
+                <element signature="e#2692#2693#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#2790#2791#0" expanded="true" />
+                <element signature="e#2831#2832#0" expanded="true" />
+                <element signature="e#2868#2869#0" expanded="true" />
+                <element signature="e#2928#2929#0" expanded="true" />
+                <element signature="e#2980#2981#0" expanded="true" />
+                <element signature="e#3023#3024#0" expanded="true" />
+                <element signature="e#3062#3063#0" expanded="true" />
+                <element signature="e#3224#3225#0" expanded="true" />
+                <element signature="e#3261#3262#0" expanded="true" />
+                <element signature="e#3321#3322#0" expanded="true" />
+                <element signature="e#3373#3374#0" expanded="true" />
+                <element signature="e#3408#3409#0" expanded="true" />
+                <element signature="e#3439#3440#0" expanded="true" />
+                <element signature="e#3487#3488#0" expanded="true" />
+                <element signature="e#3527#3528#0" expanded="true" />
+                <element signature="e#3565#3566#0" expanded="true" />
+                <element signature="e#3599#3600#0" expanded="true" />
+                <element signature="e#3653#3654#0" expanded="true" />
+                <element signature="e#3699#3700#0" expanded="true" />
+                <element signature="e#3734#3735#0" expanded="true" />
+                <element signature="e#3765#3766#0" expanded="true" />
+                <element signature="e#3813#3814#0" expanded="true" />
+                <element signature="e#3853#3854#0" expanded="true" />
+                <element signature="e#3899#3900#0" expanded="true" />
+                <element signature="e#3941#3942#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadingMode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/ReadingMode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndustryIdentifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/IndustryIdentifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,13 +287,9 @@
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5172415">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="41" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="41" />
-              <folding>
-                <element signature="e#711#732#0" expanded="true" />
-                <element signature="e#916#933#0" expanded="true" />
-                <element signature="e#1119#1138#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -77,76 +303,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntentResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/zxing/integration/android/IntentResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="85" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="85" />
-              <folding>
-                <element signature="e#1020#1021#0" expanded="false" />
-                <element signature="e#1070#1071#0" expanded="false" />
-                <element signature="e#1560#1561#0" expanded="false" />
-                <element signature="e#1591#1592#0" expanded="false" />
-                <element signature="e#1749#1750#0" expanded="false" />
-                <element signature="e#1782#1783#0" expanded="false" />
-                <element signature="e#1915#1916#0" expanded="false" />
-                <element signature="e#1946#1947#0" expanded="false" />
-                <element signature="e#2101#2102#0" expanded="false" />
-                <element signature="e#2135#2136#0" expanded="false" />
-                <element signature="e#2283#2284#0" expanded="false" />
-                <element signature="e#2326#2327#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntentIntegrator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/zxing/integration/android/IntentIntegrator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
-              <folding>
-                <element signature="e#7401#7402#0" expanded="false" />
-                <element signature="e#7429#7430#0" expanded="false" />
-                <element signature="e#7471#7472#0" expanded="false" />
-                <element signature="e#7505#7506#0" expanded="false" />
-                <element signature="e#7550#7551#0" expanded="false" />
-                <element signature="e#7601#7602#0" expanded="false" />
-                <element signature="e#7635#7636#0" expanded="false" />
-                <element signature="e#7665#7666#0" expanded="false" />
-                <element signature="e#7711#7712#0" expanded="false" />
-                <element signature="e#7749#7750#0" expanded="false" />
-                <element signature="e#7798#7799#0" expanded="false" />
-                <element signature="e#7853#7854#0" expanded="false" />
-                <element signature="e#7889#7890#0" expanded="false" />
-                <element signature="e#7921#7922#0" expanded="false" />
-                <element signature="e#7971#7972#0" expanded="false" />
-                <element signature="e#8013#8014#0" expanded="false" />
-                <element signature="e#8066#8067#0" expanded="false" />
-                <element signature="e#8125#8126#0" expanded="false" />
-                <element signature="e#8160#8161#0" expanded="false" />
-                <element signature="e#8191#8192#0" expanded="false" />
-                <element signature="e#8239#8240#0" expanded="false" />
-                <element signature="e#8279#8280#0" expanded="false" />
-                <element signature="e#8330#8331#0" expanded="false" />
-                <element signature="e#8387#8388#0" expanded="false" />
-                <element signature="e#8444#8445#0" expanded="false" />
-                <element signature="e#8485#8486#0" expanded="false" />
-                <element signature="e#8955#8956#0" expanded="false" />
-                <element signature="e#8988#8989#0" expanded="false" />
-                <element signature="e#9048#9049#0" expanded="false" />
-                <element signature="e#9090#9091#0" expanded="false" />
-                <element signature="e#9390#9391#0" expanded="false" />
-                <element signature="e#9445#9446#0" expanded="false" />
-                <element signature="e#14342#15480#0" expanded="false" />
-                <element signature="e#15479#15480#0" expanded="false" />
-                <element signature="e#17622#17623#0" expanded="false" />
-                <element signature="e#17673#17674#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1502,6 +1658,13 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Book.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Item.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/VolumeInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/ReadingMode.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/SaleInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/AccessInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/IndustryIdentifier.java" />
       </list>
     </option>
   </component>
@@ -1509,9 +1672,30 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1360" />
-    <option name="height" value="745" />
+    <option name="x" value="457" />
+    <option name="y" value="472" />
+    <option name="width" value="1556" />
+    <option name="height" value="932" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1531,12 +1715,14 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollToSource AndroidView="true" />
+      <autoscrollFromSource AndroidView="true" />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1608,6 +1794,36 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minhalivraria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MinhaLivraria" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="minhalivraria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1647,14 +1863,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -1866,13 +2080,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1360" height="745" extended-state="0" />
-    <editor active="true" />
+    <frame x="457" y="472" width="1556" height="932" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990461" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1881,19 +2095,19 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32750398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25245097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18361153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15984148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1927,13 +2141,30 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4415#4497#0" expanded="false" />
-            <element signature="e#5384#5385#0" expanded="true" />
-            <element signature="e#5439#5440#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1942,6 +2173,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="85" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="85" />
           <folding>
+            <element signature="e#0#2937#0" expanded="false" />
             <element signature="e#1020#1021#0" expanded="false" />
             <element signature="e#1070#1071#0" expanded="false" />
             <element signature="e#1560#1561#0" expanded="false" />
@@ -1963,6 +2195,90 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
           <folding>
+            <element signature="e#0#20098#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6500#6515#0" expanded="false" />
+            <element signature="e#7401#7402#0" expanded="false" />
+            <element signature="e#7429#7430#0" expanded="false" />
+            <element signature="e#7471#7472#0" expanded="false" />
+            <element signature="e#7505#7506#0" expanded="false" />
+            <element signature="e#7550#7551#0" expanded="false" />
+            <element signature="e#7601#7602#0" expanded="false" />
+            <element signature="e#7635#7636#0" expanded="false" />
+            <element signature="e#7665#7666#0" expanded="false" />
+            <element signature="e#7711#7712#0" expanded="false" />
+            <element signature="e#7749#7750#0" expanded="false" />
+            <element signature="e#7798#7799#0" expanded="false" />
+            <element signature="e#7853#7854#0" expanded="false" />
+            <element signature="e#7889#7890#0" expanded="false" />
+            <element signature="e#7921#7922#0" expanded="false" />
+            <element signature="e#7971#7972#0" expanded="false" />
+            <element signature="e#8013#8014#0" expanded="false" />
+            <element signature="e#8066#8067#0" expanded="false" />
+            <element signature="e#8125#8126#0" expanded="false" />
+            <element signature="e#8160#8161#0" expanded="false" />
+            <element signature="e#8191#8192#0" expanded="false" />
+            <element signature="e#8239#8240#0" expanded="false" />
+            <element signature="e#8279#8280#0" expanded="false" />
+            <element signature="e#8330#8331#0" expanded="false" />
+            <element signature="e#8387#8388#0" expanded="false" />
+            <element signature="e#8444#8445#0" expanded="false" />
+            <element signature="e#8485#8486#0" expanded="false" />
+            <element signature="e#8955#8956#0" expanded="false" />
+            <element signature="e#8988#8989#0" expanded="false" />
+            <element signature="e#9048#9049#0" expanded="false" />
+            <element signature="e#9090#9091#0" expanded="false" />
+            <element signature="e#9390#9391#0" expanded="false" />
+            <element signature="e#9445#9446#0" expanded="false" />
+            <element signature="e#14342#15480#0" expanded="false" />
+            <element signature="e#15479#15480#0" expanded="false" />
+            <element signature="e#17622#17623#0" expanded="false" />
+            <element signature="e#17673#17674#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4415#4497#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/zxing/integration/android/IntentResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="85" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#2937#0" expanded="false" />
+            <element signature="e#1020#1021#0" expanded="false" />
+            <element signature="e#1070#1071#0" expanded="false" />
+            <element signature="e#1560#1561#0" expanded="false" />
+            <element signature="e#1591#1592#0" expanded="false" />
+            <element signature="e#1749#1750#0" expanded="false" />
+            <element signature="e#1782#1783#0" expanded="false" />
+            <element signature="e#1915#1916#0" expanded="false" />
+            <element signature="e#1946#1947#0" expanded="false" />
+            <element signature="e#2101#2102#0" expanded="false" />
+            <element signature="e#2135#2136#0" expanded="false" />
+            <element signature="e#2283#2284#0" expanded="false" />
+            <element signature="e#2326#2327#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/zxing/integration/android/IntentIntegrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20098#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6500#6515#0" expanded="false" />
             <element signature="e#7401#7402#0" expanded="false" />
             <element signature="e#7429#7430#0" expanded="false" />
             <element signature="e#7471#7472#0" expanded="false" />
@@ -2048,6 +2364,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="85" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="85" />
           <folding>
+            <element signature="e#0#2937#0" expanded="false" />
             <element signature="e#1020#1021#0" expanded="false" />
             <element signature="e#1070#1071#0" expanded="false" />
             <element signature="e#1560#1561#0" expanded="false" />
@@ -2069,6 +2386,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
           <folding>
+            <element signature="e#0#20098#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6500#6515#0" expanded="false" />
             <element signature="e#7401#7402#0" expanded="false" />
             <element signature="e#7429#7430#0" expanded="false" />
             <element signature="e#7471#7472#0" expanded="false" />
@@ -2119,13 +2439,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5172415">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="41" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="41" />
-          <folding>
-            <element signature="e#711#732#0" expanded="true" />
-            <element signature="e#916#933#0" expanded="true" />
-            <element signature="e#1119#1138#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2134,13 +2450,229 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91847825">
-          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="219" column="47" selection-start-line="219" selection-start-column="37" selection-end-line="219" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4415#4497#0" expanded="false" />
-            <element signature="e#5384#5385#0" expanded="true" />
-            <element signature="e#5439#5440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/IndustryIdentifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/ReadingMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/SaleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/VolumeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="316" selection-start-line="24" selection-start-column="316" selection-end-line="24" selection-end-column="316" />
+          <folding>
+            <element signature="method#VolumeInfo#0;class#VolumeInfo#0" expanded="false" />
+            <element signature="method#VolumeInfo#1;class#VolumeInfo#0" expanded="false" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+            <element signature="e#1974#1975#0" expanded="true" />
+            <element signature="e#2024#2025#0" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2578#2579#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2659#2660#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2928#2929#0" expanded="true" />
+            <element signature="e#2980#2981#0" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#3062#3063#0" expanded="true" />
+            <element signature="e#3224#3225#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
+            <element signature="e#3373#3374#0" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3439#3440#0" expanded="true" />
+            <element signature="e#3487#3488#0" expanded="true" />
+            <element signature="e#3527#3528#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3599#3600#0" expanded="true" />
+            <element signature="e#3653#3654#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3734#3735#0" expanded="true" />
+            <element signature="e#3765#3766#0" expanded="true" />
+            <element signature="e#3813#3814#0" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
+            <element signature="e#3899#3900#0" expanded="true" />
+            <element signature="e#3941#3942#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/AccessInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AccessInfo#0;class#AccessInfo#0" expanded="false" />
+            <element signature="method#AccessInfo#1;class#AccessInfo#0" expanded="false" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+            <element signature="e#2606#2607#0" expanded="true" />
+            <element signature="e#2644#2645#0" expanded="true" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2778#2779#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2901#2902#0" expanded="true" />
+            <element signature="e#2945#2946#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+            <element signature="e#3076#3077#0" expanded="true" />
+            <element signature="e#3124#3125#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
+            <element signature="e#3607#3608#0" expanded="true" />
+            <element signature="e#3645#3646#0" expanded="true" />
+            <element signature="e#3802#3803#0" expanded="true" />
+            <element signature="e#3838#3839#0" expanded="true" />
+            <element signature="e#3896#3897#0" expanded="true" />
+            <element signature="e#3946#3947#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#4028#4029#0" expanded="true" />
+            <element signature="e#4194#4195#0" expanded="true" />
+            <element signature="e#4236#4237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lf/minhalivraria/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0567011">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
           </folding>
         </state>
       </provider>
