@@ -35,3 +35,4 @@ JS
 
 ##Network on Android##
 * http://developer.android.com/training/basics/network-ops/connecting.html
+* http://stackoverflow.com/questions/5776851/load-image-from-url
