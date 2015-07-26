@@ -36,3 +36,20 @@ JS
 ##Network on Android##
 * http://developer.android.com/training/basics/network-ops/connecting.html
 * http://stackoverflow.com/questions/5776851/load-image-from-url
+* 
+
+
+
+https://www.google.com.br/search?output=search&tbm=shop&q=9788528304466&oq=9788528304466
+https://www.google.com.br/search?output=search&tbm=shop&q=9781449335793&oq=9781449335793
+
+https://www.googleapis.com/books/v1/volumes?hl=pt&q=isbn:9781449335793
+
+
+http://www.buscape.com.br/meta_livros?isbn=1449335799
+
+http://www.buscape.com.br/meta_livros?isbn=9788528304466#precos
+
+Funcionando
+--------------------
+http://www.buscape.com.br/meta_livros?isbn=9788528304466
