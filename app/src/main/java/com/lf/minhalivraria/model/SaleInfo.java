@@ -7,6 +7,7 @@ import org.json.JSONObject;
  * Created by luizfernando on 7/13/15.
  */
 public class SaleInfo {
+
     private String country;
     private String saleability;
     private boolean isEbook;

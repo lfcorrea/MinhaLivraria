@@ -1,5 +1,9 @@
 package com.lf.minhalivraria.model;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * Created by luizfernando on 7/13/15.
  */
@@ -24,6 +28,37 @@ public class Item {
         this.volumeInfo = volumeInfo;
         this.saleInfo = saleInfo;
         this.accessInfo = accessInfo;
+    }
+
+    public void loadFromJSON(JSONObject jsonObject) throws JSONException {
+
+        String _kind = jsonObject.getString("kind");
+        setKind(_kind);
+
+        String _id = jsonObject.getString("id");
+        setId(_id);
+
+        String _etag = jsonObject.getString("etag");
+        setEtag(_etag);
+
+        String _selfLink = jsonObject.getString("selfLink");
+        setSelfLink(_selfLink);
+
+        JSONObject _volumeInfoObject = jsonObject.getJSONObject("volumeInfo");
+        VolumeInfo _volumeInfo = new VolumeInfo();
+        _volumeInfo.loadFromJSON(_volumeInfoObject);
+        setVolumeInfo(_volumeInfo);
+
+        JSONObject _saleInfoObject = jsonObject.getJSONObject("saleInfo");
+        SaleInfo _saleInfo = new SaleInfo();
+        _saleInfo.loadFromJSON(_saleInfoObject);
+        setSaleInfo(_saleInfo);
+
+        JSONObject _accessInfoObject = jsonObject.getJSONObject("accessInfo");
+        AccessInfo _accessInfo = new AccessInfo();
+        _accessInfo.loadFromJSON(_accessInfoObject);
+        setAccessInfo(_accessInfo);
+
     }
 
     public String getKind() {

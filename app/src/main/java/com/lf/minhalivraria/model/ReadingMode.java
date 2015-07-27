@@ -7,6 +7,7 @@ import org.json.JSONObject;
  * Created by luizfernando on 7/13/15.
  */
 public class ReadingMode {
+
     private boolean text;
     private boolean image;
 

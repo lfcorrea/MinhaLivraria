@@ -6,4 +6,5 @@
     <string name="readBarCode">Ler código</string>
     <string name="getInfo">Get Info</string>
     <string name="getPrices">Prices</string>
+    <string name="getImage">Image</string>
 </resources>

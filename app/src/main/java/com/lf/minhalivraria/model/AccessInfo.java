@@ -7,6 +7,7 @@ import org.json.JSONObject;
  * Created by luizfernando on 7/13/15.
  */
 public class AccessInfo {
+
     private String country;
     private String viewability;
     private boolean embeddable;

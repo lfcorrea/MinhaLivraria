@@ -7,6 +7,7 @@ import org.json.JSONObject;
  * Created by luizfernando on 7/13/15.
  */
 public class IndustryIdentifier {
+
     private String type;
     private String identifier;
 

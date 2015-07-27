@@ -8,7 +8,8 @@
     <TextView
         android:id="@+id/txtBarcode"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="9788528304466"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -31,11 +32,23 @@
             android:layout_height="wrap_content"
             android:text="@string/getPrices" />
 
+        <Button
+            android:id="@+id/btnGetImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getImage" />
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/txtInfo"
         android:layout_width="match_parent"
         android:layout_height="300dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/bookImageView"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
