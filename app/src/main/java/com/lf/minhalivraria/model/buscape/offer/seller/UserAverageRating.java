@@ -2,6 +2,7 @@ package com.lf.minhalivraria.model.buscape.offer.seller;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
 import com.lf.minhalivraria.model.buscape.Link;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,13 +41,13 @@ public class UserAverageRating implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        String _rating = jsonObject.getString("rating");
+        String _rating =  Util.getString(jsonObject, "rating");
         setRating(_rating);
 
-        long _numberOfComments = jsonObject.getLong("numcomments");
+        long _numberOfComments =  Util.getLong(jsonObject, "numcomments");
         setNumberOfComments(_numberOfComments);
 
-        setLinks(getLinks(jsonObject));
+        setLinks(Util.getLinks(jsonObject));
 
     }
 

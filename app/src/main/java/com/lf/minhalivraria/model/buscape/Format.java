@@ -34,13 +34,13 @@ public class Format implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        long _width = jsonObject.getLong("width");
+        long _width = Util.getLong(jsonObject, "width");
         setWidth(_width);
 
-        String _url = jsonObject.getString("url");
+        String _url = Util.getString(jsonObject, "url");
         setUrl(_url);
 
-        long _height = jsonObject.getLong("height");
+        long _height = Util.getLong(jsonObject, "height");
         setHeight(_height);
 
     }

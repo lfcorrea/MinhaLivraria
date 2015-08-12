@@ -33,13 +33,13 @@ public class XmlSchemaType implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        String _prefix = jsonObject.getString("prefix");
+        String _prefix = Util.getString(jsonObject, "prefix");
         setPrefix(_prefix);
 
-        String _localPart = jsonObject.getString("localpart");
+        String _localPart = Util.getString(jsonObject, "localpart");
         setLocalPart(_localPart);
 
-        String _namespaceUri = jsonObject.getString("namespaceuri");
+        String _namespaceUri = Util.getString(jsonObject, "namespaceuri");
         setNamespaceUri(_namespaceUri);
 
     }

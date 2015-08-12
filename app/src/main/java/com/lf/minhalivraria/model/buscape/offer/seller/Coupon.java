@@ -1,6 +1,7 @@
 package com.lf.minhalivraria.model.buscape.offer.seller;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,10 +34,10 @@ public class Coupon implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        long _id = jsonObject.getLong("id");
+        long _id = Util.getLong(jsonObject, "id");
         setId(_id);
 
-        String _type = jsonObject.getString("type");
+        String _type = Util.getString(jsonObject, "type");
         setType(_type);
 
     }

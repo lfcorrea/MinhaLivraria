@@ -1,6 +1,7 @@
 package com.lf.minhalivraria.model.buscape.offer.seller;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,10 +34,10 @@ public class Rating implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        EbitRating _ebitRating = new EbitRating(jsonObject.getJSONObject("ebitrating"));
+        EbitRating _ebitRating = new EbitRating(Util.getJSONObject(jsonObject, "ebitrating"));
         setEbitRating(_ebitRating);
 
-        UserAverageRating _userAverageRating = new UserAverageRating(jsonObject.getJSONObject("useraveragerating"));
+        UserAverageRating _userAverageRating = new UserAverageRating(Util.getJSONObject(jsonObject, "useraveragerating"));
         setUserAverageRating(_userAverageRating);
 
     }

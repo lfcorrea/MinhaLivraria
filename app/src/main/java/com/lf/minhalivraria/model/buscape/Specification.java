@@ -34,16 +34,17 @@ public class Specification implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        JSONArray _itemsArray = jsonObject.getJSONArray("Item");
+        JSONArray _itemsArray = Util.getJSONArray(jsonObject,"Item");
         int sizeItems = _itemsArray.length();
         Item [] _items = new Item[sizeItems];
+
         for(int i = 0; i<sizeItems; i++){
             Item _item = new Item(_itemsArray.getJSONObject(i));
             _items[i] = _item;
         }
         setItems(_items);
 
-        setLinks(getLinks(jsonObject));
+        setLinks(Util.getLinks(jsonObject));
 
     }
 

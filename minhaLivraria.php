@@ -6,8 +6,16 @@
         const GET_THUMBNAIL = "thumbnail";
         const GET_SMALL_THUMBNAIL = "smallThumbnail";
         const GET_PRICES = "prices";
+        const GET_PRODUCT_BUSCAPE = "buscape";
     }
 
+    abstract class CONSTS {
+      const APP_TOKEN = "6c5173612f66686d5473303d";
+    }
+
+    abstract class BuscapeURIs{
+      const GET_PRODUCT_INFO = "http://sandbox.buscape.com.br/service/findProductList/%s/BR/?format=json&keyword=%s";
+    }
     abstract class GoogleBooksURIs {
         const GET_BOOK_INFO = "https://www.googleapis.com/books/v1/volumes?q=isbn:%s";
     }
@@ -51,11 +59,25 @@
                     //call get prices function
                     $result = $this->getPrices();
                     break;
+                case Actions::GET_PRODUCT_BUSCAPE:
+                    $result = $this->getProductBuscape();
+                    break;
                 default:
                     $result = "INVALID ACTION";
             }
 
             return json_encode($result);
+        }
+
+        private function getProductBuscape() {
+
+          $isbn = $_REQUEST["isbn"];
+          $uri = sprintf(BuscapeURIs::GET_PRODUCT_INFO,CONSTS::APP_TOKEN, $isbn);
+
+          $result = $this->getURIContents($uri);
+
+          return $result;
+
         }
 
         private function getBookInfo() {

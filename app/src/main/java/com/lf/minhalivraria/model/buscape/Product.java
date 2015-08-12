@@ -64,51 +64,52 @@ public class Product implements JSONObjectConverter {
 
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
-        Thumbnail _thumbnail = new Thumbnail(jsonObject.getJSONObject("thumbnail"));
+
+        Thumbnail _thumbnail = new Thumbnail(Util.getJSONObject(jsonObject, "thumbnail"));
         setThumbnail(_thumbnail);
 
-        Double _priceMax = jsonObject.getDouble("pricemax");
+        Double _priceMax = Util.getDouble(jsonObject, "pricemax");
         setPriceMax(_priceMax);
 
-        long _quantity = jsonObject.getLong("quantity");
+        long _quantity = Util.getLong(jsonObject, "quantity");
         setQuantity(_quantity);
 
-        UserAverageRating _userAverageRating = new UserAverageRating(jsonObject.getJSONObject("rating").getJSONObject("useraveragerating"));
+        UserAverageRating _userAverageRating = new UserAverageRating(Util.getJSONObject(Util.getJSONObject(jsonObject, "rating"), "useraveragerating"));
         setRating(_userAverageRating);
 
-        Specification _specification = new Specification(jsonObject.getJSONObject("specification"));
+        Specification _specification = new Specification(Util.getJSONObject(jsonObject, "specification"));
         setSpecification(_specification);
 
-        boolean _hasMetaSearch = jsonObject.getBoolean("hasmetasearch");
+        boolean _hasMetaSearch = Util.getBoolean(jsonObject, "hasmetasearch");
         setHasMetaSearch(_hasMetaSearch);
 
-        boolean _eco = jsonObject.getBoolean("eco");
+        boolean _eco = Util.getBoolean(jsonObject, "eco");
         setEco(_eco);
 
-        double _priceMin = jsonObject.getDouble("pricemin");
+        double _priceMin = Util.getDouble(jsonObject, "pricemin");
         setPriceMin(_priceMin);
 
-        long _numberOfOffers = jsonObject.getLong("numoffers");
+        long _numberOfOffers = Util.getLong(jsonObject, "numoffers");
         setNumberOffers(_numberOfOffers);
 
-        long _totalSellers = jsonObject.getLong("totalsellers");
+        long _totalSellers = Util.getLong(jsonObject, "totalsellers");
         setTotalSellers(_totalSellers);
 
-        String _productName = jsonObject.getString("productname");
+        String _productName = Util.getString(jsonObject, "productname");
         setProductName(_productName);
 
-        boolean _fullDescription = jsonObject.getBoolean("fulldescription");
+        boolean _fullDescription = Util.getBoolean(jsonObject, "fulldescription");
         setFullDescription(_fullDescription);
 
-        setLinks(getLinks(jsonObject));
+        setLinks(Util.getLinks(jsonObject));
 
-        String _currencyAbbreviation = jsonObject.getJSONObject("currency").getString("abbreviation");
+        String _currencyAbbreviation = Util.getString(Util.getJSONObject(jsonObject, "currency"), "abbreviation");
         setCurrencyAbbreviation(_currencyAbbreviation);
 
-        long _id = jsonObject.getLong("id");
+        long _id = Util.getLong(jsonObject, "id");
         setId(_id);
 
-        long _categoryId = jsonObject.getLong("categoryid");
+        long _categoryId = Util.getLong(jsonObject, "categoryid");
         setCategoryId(_categoryId);
 
     }

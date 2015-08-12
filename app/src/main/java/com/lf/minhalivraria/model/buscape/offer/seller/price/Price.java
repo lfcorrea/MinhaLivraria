@@ -1,6 +1,7 @@
 package com.lf.minhalivraria.model.buscape.offer.seller.price;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,7 +45,7 @@ public class Price implements JSONObjectConverter {
         Parcel _parcel = new Parcel(_parcelObject);
         setParcel(_parcel);
 
-        String _currencyAbbreviation = jsonObject.getJSONObject("currency").getString("abbreviation");
+        String _currencyAbbreviation = Util.getString(Util.getJSONObject(jsonObject, "currency"), "abbreviation");
         setCurrencyAbbreviation(_currencyAbbreviation);
 
         double _value = jsonObject.getDouble("value");

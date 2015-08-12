@@ -7,4 +7,7 @@
     <string name="getInfo">Get Info</string>
     <string name="getPrices">Prices</string>
     <string name="getImage">Image</string>
+    <string name="title_book_list">Books</string>
+    <string name="title_book_detail">Book Detail</string>
+    <string name="title_activity_book_info">BookInfoActivity</string>
 </resources>

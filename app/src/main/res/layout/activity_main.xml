@@ -27,12 +27,6 @@
             android:text="@string/getInfo" />
 
         <Button
-            android:id="@+id/btnGetPrices"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/getPrices" />
-
-        <Button
             android:id="@+id/btnGetImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,10 +34,15 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtInfo"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="300dp">
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
 
     <ImageView
         android:layout_width="match_parent"

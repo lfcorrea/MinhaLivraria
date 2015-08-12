@@ -34,10 +34,10 @@ public class Item implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        String _label = jsonObject.getString("label");
+        String _label = Util.getString(jsonObject, "label");
         setLabel(_label);
 
-        JSONArray _valuesArray = jsonObject.getJSONArray("value");
+        JSONArray _valuesArray = Util.getJSONArray(jsonObject, "value");
         int size = _valuesArray.length();
         String[] _values = new String[size];
         for (int i = 0; i < size; i++) {

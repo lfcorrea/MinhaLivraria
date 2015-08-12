@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * Created by luizfernando on 8/1/15.
  */
-public class Thumbnail implements JSONObjectConverter{
+public class Thumbnail implements JSONObjectConverter {
 
     private Format[] formats;
 
@@ -27,7 +27,8 @@ public class Thumbnail implements JSONObjectConverter{
         this.height = height;
     }
 
-    public Thumbnail(JSONObject jsonObject) {
+    public Thumbnail(JSONObject jsonObject) throws JSONException {
+        this.fromJSON(jsonObject);
     }
 
     @Override
@@ -38,22 +39,24 @@ public class Thumbnail implements JSONObjectConverter{
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        JSONArray _formatsArray = jsonObject.getJSONArray("formats");
+        JSONArray _formatsArray = Util.getJSONArray(jsonObject, "formats");
         int size = _formatsArray.length();
-        Format [] _formats = new Format[size];
-        for(int i =0 ;i<size;i++){
-            Format _format = new Format(_formatsArray.getJSONObject(i));
+        Format[] _formats = new Format[size];
+
+        for (int i = 0; i < size; i++) {
+            JSONObject _formatJSON = Util.getJSONObject((JSONObject)_formatsArray.get(i),"formats");
+            Format _format = new Format(_formatJSON);
             _formats[i] = _format;
         }
         setFormats(_formats);
 
-        long _width = jsonObject.getLong("width");
+        long _width = Util.getLong(jsonObject, "width");
         setWidth(_width);
 
-        String _url = jsonObject.getString("url");
+        String _url = Util.getString(jsonObject, "url");
         setUrl(_url);
 
-        long _height = jsonObject.getLong("height");
+        long _height = Util.getLong(jsonObject, "height");
         setHeight(_height);
     }
 
@@ -74,7 +77,7 @@ public class Thumbnail implements JSONObjectConverter{
     }
 
     public String getUrl() {
-        return url;
+        return Util.sanitizeUrl(url);
     }
 
     public void setUrl(String url) {

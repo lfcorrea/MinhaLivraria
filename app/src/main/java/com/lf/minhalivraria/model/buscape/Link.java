@@ -35,10 +35,10 @@ public class Link implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        String _url = jsonObject.getString("url");
+        String _url = Util.getString(jsonObject, "url");
         setUrl(_url);
 
-        String _type = jsonObject.getString("type");
+        String _type = Util.getString(jsonObject, "type");
         setType(_type);
 
     }

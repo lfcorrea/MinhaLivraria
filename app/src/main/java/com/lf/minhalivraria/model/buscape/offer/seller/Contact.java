@@ -1,6 +1,7 @@
 package com.lf.minhalivraria.model.buscape.offer.seller;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -34,10 +35,10 @@ public class Contact implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        String _label = jsonObject.getString("label");
+        String _label = Util.getString(jsonObject, "label");
         setLabel(_label);
 
-        String _value = jsonObject.getString("value");
+        String _value = Util.getString(jsonObject, "value");
         setValue(_value);
 
     }

@@ -2,6 +2,7 @@ package com.lf.minhalivraria.model.buscape.offer.seller;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
 import com.lf.minhalivraria.model.buscape.Link;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -65,55 +66,47 @@ public class Seller implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        boolean _isTrustedStore = jsonObject.getBoolean("istrustedstore");
+        boolean _isTrustedStore = Util.getBoolean(jsonObject, "istrustedstore");
         setIsTrustedstore(_isTrustedStore);
 
-        boolean _pagamentoDigital = jsonObject.getBoolean("pagamentodigital");
+        boolean _pagamentoDigital = Util.getBoolean(jsonObject, "pagamentodigital");
         setPagamentoDigital(_pagamentoDigital);
 
-        String _thumbnailUrl = jsonObject.getJSONObject("thumbnail").getString("url");
+        String _thumbnailUrl = Util.getString(Util.getJSONObject(jsonObject, " thumbnail"), "url");
         setThumbnailUrl(_thumbnailUrl);
 
-        Rating _rating = new Rating(jsonObject.getJSONObject("rating"));
+        Rating _rating = new Rating(Util.getJSONObject(jsonObject, "rating"));
         setRating(_rating);
 
-        boolean _cpcDifferentiated = jsonObject.getBoolean("cpcdifferentiated");
+        boolean _cpcDifferentiated = Util.getBoolean(jsonObject, "cpcdifferentiated");
         setCpcDifferentiated(_cpcDifferentiated);
 
-        setLinks(getLinks(jsonObject));
+        setLinks(Util.getLinks(jsonObject));
 
-        String _sellerName = jsonObject.getString("sellername");
+        String _sellerName = Util.getString(jsonObject, "sellername");
         setSellerName(_sellerName);
 
-        boolean _oneClickBuy = jsonObject.getBoolean("oneclickbuy");
+        boolean _oneClickBuy = Util.getBoolean(jsonObject, "oneclickbuy");
         setOneClickBuy(_oneClickBuy);
 
-        long _id = jsonObject.getLong("id");
+        long _id = Util.getLong(jsonObject, "id");
         setId(_id);
 
-        if (jsonObject.has("contacts")) {
+        JSONArray _contactsArray = Util.getJSONArray(jsonObject, "contacts");
+        int size = _contactsArray.length();
+        Contact[] _contacts = new Contact[size];
 
-            JSONArray _contactsArray = jsonObject.getJSONArray("contacts");
-            int size = _contactsArray.length();
-            Contact[] _contacts = new Contact[size];
-
-            for (int i = 0; i < size; i++) {
-                Contact _contact = new Contact(_contactsArray.getJSONObject(i));
-                _contacts[i] = _contact;
-            }
-
-            setContacts(_contacts);
-
-        } else {
-
-            setContacts(new Contact[0]);
-
+        for (int i = 0; i < size; i++) {
+            Contact _contact = new Contact(_contactsArray.getJSONObject(i));
+            _contacts[i] = _contact;
         }
 
-        long _advertiserId = jsonObject.getLong("advertiserid");
+        setContacts(_contacts);
+
+        long _advertiserId = Util.getLong(jsonObject, "advertiserid");
         setAdvertiserId(_advertiserId);
 
-        Coupon _coupon = new Coupon(jsonObject.getJSONObject("coupon"));
+        Coupon _coupon = new Coupon(Util.getJSONObject(jsonObject, "coupon"));
         setCoupon(_coupon);
 
     }

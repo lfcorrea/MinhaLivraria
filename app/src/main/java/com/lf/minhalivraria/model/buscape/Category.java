@@ -45,27 +45,27 @@ public class Category implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        boolean _concatenateCategoryName = jsonObject.getBoolean("concatenatecategoryname");
+        boolean _concatenateCategoryName = Util.getBoolean(jsonObject, "concatenatecategoryname");
         setConcatenateCategoryName(_concatenateCategoryName);
 
-        String _thumbnailUrl = jsonObject.getJSONObject("thumbnail").getString("url");
+        String _thumbnailUrl = Util.getString(Util.getJSONObject(jsonObject, "thumbnail"), "url");
         setThumbnailUrl(_thumbnailUrl);
 
-        boolean _hasOffer = jsonObject.getBoolean("hasoffer");
+        boolean _hasOffer = Util.getBoolean(jsonObject, "hasoffer");
         setHasOffer(_hasOffer);
 
-        long _parentCategoryId = jsonObject.getLong("parentcategoryid");
+        long _parentCategoryId = Util.getLong(jsonObject, "parentcategoryid");
         setParentCategoryId(_parentCategoryId);
 
-        boolean _isFinal = jsonObject.getBoolean("isfinal");
+        boolean _isFinal = Util.getBoolean(jsonObject, "isfinal");
         setIsFinal(_isFinal);
 
-        String _name = jsonObject.getString("name");
+        String _name = Util.getString(jsonObject, "name");
         setName(_name);
 
-        setLinks(getLinks(jsonObject));
+        setLinks(Util.getLinks(jsonObject));
 
-        long _id = jsonObject.getLong("id");
+        long _id = Util.getLong(jsonObject, "id");
         setId(_id);
 
     }

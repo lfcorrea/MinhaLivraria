@@ -1,6 +1,7 @@
 package com.lf.minhalivraria.model.buscape.offer.seller.price;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,13 +39,13 @@ public class Parcel implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        int _number = jsonObject.getInt("number");
+        int _number = Util.getInt(jsonObject, "number");
         setNumber(_number);
 
-        int _interest = jsonObject.getInt("interest");
+        int _interest = Util.getInt(jsonObject, "interest");
         setInterest(_interest);
 
-        double _value = jsonObject.getDouble("value");
+        double _value = Util.getDouble(jsonObject, "value");
         setValue(_value);
 
     }

@@ -44,28 +44,28 @@ public class Details implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        String _applicationID = jsonObject.getString("applicationid");
+        String _applicationID = Util.getString(jsonObject, "applicationid");
         setApplicationID(_applicationID);
 
-        String _applicationVersion = jsonObject.getString("applicationversion");
+        String _applicationVersion = Util.getString(jsonObject, "applicationversion");
         setApplicationVersion(_applicationVersion);
 
-        String _applicationPath = jsonObject.getString("applicationpath");
+        String _applicationPath = Util.getString(jsonObject, "applicationpath");
         setApplicationPath(_applicationPath);
 
-        Date _date = new Date(jsonObject.getJSONObject("date"));
+        Date _date = new Date(Util.getJSONObject(jsonObject, "date"));
         setDate(_date);
 
-        long _elapsedTime = jsonObject.getLong("elapsedtime");
+        long _elapsedTime = Util.getLong(jsonObject, "elapsedtime");
         setElapsedTime(_elapsedTime);
 
-        String _status = jsonObject.getString("status");
+        String _status = Util.getString(jsonObject, "status");
         setStatus(_status);
 
-        long _code = jsonObject.getLong("code");
+        long _code = Util.getLong(jsonObject, "code");
         setCode(_code);
 
-        String _message = jsonObject.getString("message");
+        String _message = Util.getString(jsonObject, "message");
         setMessage(_message);
 
     }

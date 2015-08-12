@@ -2,6 +2,7 @@ package com.lf.minhalivraria.model.buscape.offer;
 
 import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
 import com.lf.minhalivraria.model.buscape.Link;
+import com.lf.minhalivraria.model.buscape.Util;
 import com.lf.minhalivraria.model.buscape.offer.seller.price.Price;
 import com.lf.minhalivraria.model.buscape.offer.seller.Seller;
 
@@ -56,30 +57,30 @@ public class Offer implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        Seller _seller = new Seller(jsonObject.getJSONObject("seller"));
+        Seller _seller = new Seller(Util.getJSONObject(jsonObject, "seller"));
         setSeller(_seller);
 
-        String _thumbnailUrl = jsonObject.getJSONObject("thumbnail").getString("url");
+        String _thumbnailUrl = Util.getString(Util.getJSONObject(jsonObject, "thumbnail"), "url");
         setThumbnailUrl(_thumbnailUrl);
 
-        long _productId = jsonObject.getLong("productid");
+        long _productId = Util.getLong(jsonObject, "productid");
         setProductId(_productId);
 
-        String _offerName = jsonObject.getString("offername");
+        String _offerName = Util.getString(jsonObject, "offername");
         setOfferName(_offerName);
 
-        Price _price = new Price(jsonObject.getJSONObject("price"));
+        Price _price = new Price(Util.getJSONObject(jsonObject, "price"));
         setPrice(_price);
 
-        setLinks(getLinks(jsonObject));
+        setLinks(Util.getLinks(jsonObject));
 
-        String _offerShortName = jsonObject.getString("offershortname");
+        String _offerShortName = Util.getString(jsonObject, "offershortname");
         setOfferShortName(_offerShortName);
 
-        long _id = jsonObject.getLong("id");
+        long _id = Util.getLong(jsonObject, "id");
         setId(_id);
 
-        long _categoryId = jsonObject.getLong("categoryid");
+        long _categoryId = Util.getLong(jsonObject, "categoryid");
         setCategoryId(_categoryId);
 
     }

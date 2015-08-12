@@ -51,7 +51,7 @@ public class Result implements JSONObjectConverter {
         this.category = category;
     }
 
-    public Result (JSONObject jsonObject) throws JSONException {
+    public Result(JSONObject jsonObject) throws JSONException {
         this.fromJSON(jsonObject);
     }
 
@@ -63,55 +63,62 @@ public class Result implements JSONObjectConverter {
     @Override
     public void fromJSON(JSONObject jsonObject) throws JSONException {
 
-        JSONArray _productArray = jsonObject.getJSONArray("product");
+        JSONArray _productArray = Util.getJSONArray(jsonObject, "product");
         int sizeProducts = _productArray.length();
-        Product [] _products = new Product[sizeProducts];
-        for(int i=0;i<sizeProducts;i++){
-            Product _product = new Product(_productArray.getJSONObject(i));
+        Product[] _products = new Product[sizeProducts];
+        for (int i = 0; i < sizeProducts; i++) {
+            JSONObject _productJSON = Util.getJSONObject((JSONObject) _productArray.get(i), "product");
+            Product _product = new Product(_productJSON);
             _products[i] = _product;
         }
         setProducts(_products);
 
-        String _idpg = jsonObject.getString("idpg");
+        String _idpg = Util.getString(jsonObject, "idpg");
         setIdpg(_idpg);
 
-        boolean _schk = jsonObject.getBoolean("schk");
+        boolean _schk = Util.getBoolean(jsonObject, "schk");
         setSchk(_schk);
 
-        String _match = jsonObject.getString("match");
+        String _match = Util.getString(jsonObject, "match");
         setMatch(_match);
 
-        long _totalResultsReturned = jsonObject.getLong("totalresultsreturned");
+        long _totalResultsReturned = Util.getLong(jsonObject, "totalresultsreturned");
         setTotalResultsReturned(_totalResultsReturned);
 
-        long _totalResultsAvailable = jsonObject.getLong("totalresultsavailable");
+        long _totalResultsAvailable = Util.getLong(jsonObject, "totalresultsavailable");
         setTotalResultsAvailable(_totalResultsAvailable);
 
-        JSONArray _offersArray = jsonObject.getJSONArray("offer");
-        int sizeOffer = _offersArray.length();
-        Offer[] _offers = new Offer[sizeOffer];
-        for(int i=0;i<sizeOffer;i++){
-            Offer _offer = new Offer(_offersArray.getJSONObject(i));
-            _offers[i] = _offer;
+        Offer[] _offers = new Offer[0];
+        if (jsonObject.has("offer")) {
+
+            JSONArray _offersArray = Util.getJSONArray(jsonObject, "offer");
+            int sizeOffer = _offersArray.length();
+            _offers = new Offer[sizeOffer];
+
+            for (int i = 0; i < sizeOffer; i++) {
+                Offer _offer = new Offer(_offersArray.getJSONObject(i));
+                _offers[i] = _offer;
+            }
+
         }
         setOffers(_offers);
 
-        long _totalLooseOffers = jsonObject.getLong("totallooseoffers");
+        long _totalLooseOffers = Util.getLong(jsonObject, "totallooseoffers");
         setTotalLooseOffers(_totalLooseOffers);
 
-        int _totalResultsSellers = jsonObject.getInt("totalresultssellers");
+        int _totalResultsSellers = Util.getInt(jsonObject, "totalresultssellers");
         setTotalResultsSellers(_totalResultsSellers);
 
-        Details _details = new Details(jsonObject.getJSONObject("details"));
+        Details _details = new Details(Util.getJSONObject(jsonObject, "details"));
         setDetails(_details);
 
-        long _totalPages = jsonObject.getLong("totalpages");
+        long _totalPages = Util.getLong(jsonObject, "totalpages");
         setTotalPages(_totalPages);
 
-        long _page = jsonObject.getLong("page");
+        long _page = Util.getLong(jsonObject, "page");
         setPage(_page);
 
-        Category _category = new Category(jsonObject.getJSONObject("category"));
+        Category _category = new Category(Util.getJSONObject(jsonObject, "category"));
         setCategory(_category);
 
     }
@@ -218,6 +225,21 @@ public class Result implements JSONObjectConverter {
 
     public void setPage(long page) {
         this.page = page;
+    }
+
+
+    public String getThumbnailUrl() {
+
+        String result = "";
+
+        if (products != null && products.length > 0) {
+
+            result = products[0].getThumbnail().getUrl();
+
+        }
+
+        return result;
+
     }
 
     @Override
