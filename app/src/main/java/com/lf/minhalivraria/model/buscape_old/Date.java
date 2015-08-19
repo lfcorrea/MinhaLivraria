@@ -1,6 +1,4 @@
-package com.lf.minhalivraria.model.buscape;
-
-import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
+package com.lf.minhalivraria.model.buscape_old;
 
 import org.json.JSONException;
 import org.json.JSONObject;

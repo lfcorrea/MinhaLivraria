@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/luizfernando/AndroidStudioProjects/MinhaLivraria/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/Users/luizfernando/AndroidStudioProjects/MinhaLivraria/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-989404ee5ec1792e1f9354387429e99c6fa75174.jar" />
-    </item>
-    <item
         jar="/Users/luizfernando/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -28,6 +21,20 @@
         revision="22.0.1"
         sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
         <dex dex="/Users/luizfernando/AndroidStudioProjects/MinhaLivraria/app/build/intermediates/pre-dexed/debug/classes-4de7ba820256f56b3b943dc46d15fc650cd15e0b.jar" />
+    </item>
+    <item
+        jar="/Users/luizfernando/AndroidStudioProjects/MinhaLivraria/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/luizfernando/AndroidStudioProjects/MinhaLivraria/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-989404ee5ec1792e1f9354387429e99c6fa75174.jar" />
+    </item>
+    <item
+        jar="/Users/luizfernando/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/luizfernando/AndroidStudioProjects/MinhaLivraria/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-ebc7b43fd82529cb3b14e3f25b0f71dc519052ce.jar" />
     </item>
 
 </items>

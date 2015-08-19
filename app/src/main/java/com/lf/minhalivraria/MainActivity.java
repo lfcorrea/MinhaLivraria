@@ -1,21 +1,17 @@
 package com.lf.minhalivraria;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.lf.minhalivraria.model.buscape.Result;
+import com.lf.minhalivraria.model.buscape_old.Result;
 import com.lf.minhalivraria.network.DownloadImageTask;
 import com.lf.minhalivraria.network.NetworkImageCallback;
 import com.lf.minhalivraria.network.NetworkJSONCallback;
@@ -25,15 +21,30 @@ import com.lf.minhalivraria.network.NetworkUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class MainActivity extends Activity implements View.OnClickListener {
 
-    private TextView txtBarcode;
-    private Button btnReadBarcode;
-    private Button btnGetInfo;
-    private Button btnGetImage;
-    private TextView txtInfo;
-    private ImageView bookImageView;
+public class MainActivity extends Activity {
+
+    @Bind(R.id.txtBarcode)
+    TextView txtBarcode;
+
+    @Bind(R.id.btnReadBarcode)
+    Button btnReadBarcode;
+
+    @Bind(R.id.btnGetInfo)
+    Button btnGetInfo;
+
+    @Bind(R.id.btnGetImage)
+    Button btnGetImage;
+
+    @Bind(R.id.txtInfo)
+    TextView txtInfo;
+
+    @Bind(R.id.bookImageView)
+    ImageView bookImageView;
 
     public static final String DEBUG_TAG = "MinhaLivraria";
 
@@ -48,17 +59,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        txtBarcode = (TextView) findViewById(R.id.txtBarcode);
-        btnReadBarcode = (Button) findViewById(R.id.btnReadBarcode);
-        btnGetInfo = (Button) findViewById(R.id.btnGetInfo);
-        btnGetImage = (Button) findViewById(R.id.btnGetImage);
-        txtInfo = (TextView) findViewById(R.id.txtInfo);
-        bookImageView = (ImageView) findViewById(R.id.bookImageView);
-
-        btnReadBarcode.setOnClickListener(this);
-        btnGetInfo.setOnClickListener(this);
-        btnGetImage.setOnClickListener(this);
+        ButterKnife.bind(this);
 
     }
 
@@ -66,7 +67,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         txtInfo.append("\n\n" + message);
     }
 
-    private void getImage() {
+    @OnClick(R.id.btnGetImage)
+    public void getImage() {
 
         String message = "";
 
@@ -105,7 +107,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
 
-    private void readBarcode() {
+    @OnClick(R.id.btnReadBarcode)
+    public void readBarcode() {
         IntentIntegrator integrator = new IntentIntegrator(this);
         integrator.initiateScan();
     }
@@ -122,7 +125,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     }
 
-    private void getBookInfo() {
+    @OnClick(R.id.btnGetInfo)
+    public void getBookInfo() {
 
         // Gets the URL from the UI's text field.
         String barCode = txtBarcode.getText().toString();
@@ -156,28 +160,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } else {
 
             txtInfo.append("\n\nNo network connection available.");
-
-        }
-
-    }
-
-
-    @Override
-    public void onClick(View v) {
-
-        switch (v.getId()) {
-
-            case R.id.btnReadBarcode:
-                readBarcode();
-                break;
-
-            case R.id.btnGetInfo:
-                getBookInfo();
-                break;
-
-            case R.id.btnGetImage:
-                getImage();
-                break;
 
         }
 

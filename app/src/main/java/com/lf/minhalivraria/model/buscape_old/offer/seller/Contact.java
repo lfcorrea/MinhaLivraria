@@ -1,7 +1,7 @@
-package com.lf.minhalivraria.model.buscape.offer.seller;
+package com.lf.minhalivraria.model.buscape_old.offer.seller;
 
-import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
-import com.lf.minhalivraria.model.buscape.Util;
+import com.lf.minhalivraria.model.buscape_old.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape_old.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;

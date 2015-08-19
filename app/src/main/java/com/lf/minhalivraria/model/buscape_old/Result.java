@@ -1,6 +1,6 @@
-package com.lf.minhalivraria.model.buscape;
+package com.lf.minhalivraria.model.buscape_old;
 
-import com.lf.minhalivraria.model.buscape.offer.Offer;
+import com.lf.minhalivraria.model.buscape_old.offer.Offer;
 
 import org.json.JSONArray;
 import org.json.JSONException;

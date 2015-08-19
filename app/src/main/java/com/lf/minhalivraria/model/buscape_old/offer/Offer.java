@@ -1,12 +1,11 @@
-package com.lf.minhalivraria.model.buscape.offer;
+package com.lf.minhalivraria.model.buscape_old.offer;
 
-import com.lf.minhalivraria.model.buscape.JSONObjectConverter;
-import com.lf.minhalivraria.model.buscape.Link;
-import com.lf.minhalivraria.model.buscape.Util;
-import com.lf.minhalivraria.model.buscape.offer.seller.price.Price;
-import com.lf.minhalivraria.model.buscape.offer.seller.Seller;
+import com.lf.minhalivraria.model.buscape_old.JSONObjectConverter;
+import com.lf.minhalivraria.model.buscape_old.Link;
+import com.lf.minhalivraria.model.buscape_old.Util;
+import com.lf.minhalivraria.model.buscape_old.offer.seller.price.Price;
+import com.lf.minhalivraria.model.buscape_old.offer.seller.Seller;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
