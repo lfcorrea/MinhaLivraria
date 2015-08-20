@@ -1,5 +1,7 @@
 package com.lf.minhalivraria.network;
 
+import android.os.AsyncTask;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -8,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by luizfernando on 8/8/15.
  */
-public class NetworkStringTask {
+public class NetworkStringTask extends AsyncTask<String, Object, String> {
 
     private NetworkStringCallback callback;
 

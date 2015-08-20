@@ -9,13 +9,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.lf.minhalivraria.model.buscape_old.Result;
+import com.lf.minhalivraria.model.buscape.Result;
 import com.lf.minhalivraria.network.DownloadImageTask;
 import com.lf.minhalivraria.network.NetworkImageCallback;
 import com.lf.minhalivraria.network.NetworkJSONCallback;
 import com.lf.minhalivraria.network.NetworkJSONTask;
+import com.lf.minhalivraria.network.NetworkStringCallback;
+import com.lf.minhalivraria.network.NetworkStringTask;
 import com.lf.minhalivraria.network.NetworkUtil;
 
 import org.json.JSONException;
@@ -74,7 +77,7 @@ public class MainActivity extends Activity {
 
         if (result != null) {
 
-            String imageUrl = result.getThumbnailUrl();
+            String imageUrl = "";//result.getThumbnailUrl();
 
             if (!imageUrl.equals("")) {
 
@@ -134,15 +137,32 @@ public class MainActivity extends Activity {
         Log.d(DEBUG_TAG, "URL:" + stringUrl);
 
 
-        NetworkJSONCallback callback = new NetworkJSONCallback() {
+//        NetworkJSONCallback callback = new NetworkJSONCallback() {
+        NetworkStringCallback callback = new NetworkStringCallback() {
             @Override
-            public void process(JSONObject jsonObject) {
+//            public void process(JSONObject jsonObject) {
+            public void process(String data) {
                 try {
 
-                    result = new Result(jsonObject);
+                    data = data.replace("\\n", "")
+                            .replace("\\r", "")
+                            .replace("\\\"", "\"")
+                            .replace("\\/", "/")
+                            .replace("\"{", "{")
+                            .replace("}\"", "}");
+
+                    JSONObject jsonObject = new JSONObject(data);
+                    data = jsonObject.toString(2);
+
+//                    data = data.replace("\"{", "{")
+//                            .replace("}\"", "}");
+
+                    //result = new Result(jsonObject);
+                    Gson gson = new Gson();
+                    result = gson.fromJson(data, Result.class);
                     txtInfo.append(result.toString());
 
-                } catch (JSONException e) {
+                } catch (Exception e) {
 
                     e.printStackTrace();
                     txtInfo.append("Error while parsing result.");
@@ -155,7 +175,8 @@ public class MainActivity extends Activity {
 
         if (NetworkUtil.isConnected(getApplicationContext())) {
 
-            new NetworkJSONTask(callback).execute(stringUrl);
+//            new NetworkJSONTask(callback).execute(stringUrl);
+            new NetworkStringTask(callback).execute(stringUrl);
 
         } else {
 

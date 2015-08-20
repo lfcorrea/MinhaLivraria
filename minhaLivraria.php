@@ -66,7 +66,7 @@
                     $result = "INVALID ACTION";
             }
 
-            return json_encode($result);
+            return json_encode($result, JSON_PRETTY_PRINT);
         }
 
         private function getProductBuscape() {
@@ -75,6 +75,9 @@
           $uri = sprintf(BuscapeURIs::GET_PRODUCT_INFO,CONSTS::APP_TOKEN, $isbn);
 
           $result = $this->getURIContents($uri);
+            $result = json_decode($result);
+            $result->products = $result->products;
+            unset($result->products);
 
           return $result;
 
