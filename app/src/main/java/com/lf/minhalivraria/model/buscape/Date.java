@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Date {
+import java.io.Serializable;
+
+public class Date implements Serializable {
     private int minute;
 
     private boolean valid;

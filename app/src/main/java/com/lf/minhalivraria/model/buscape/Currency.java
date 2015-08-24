@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Currency {
+import java.io.Serializable;
+
+public class Currency implements Serializable {
     private String abbreviation;
 
     public Currency() {

@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Details {
+import java.io.Serializable;
+
+public class Details implements Serializable {
     private String message;
 
     private String status;

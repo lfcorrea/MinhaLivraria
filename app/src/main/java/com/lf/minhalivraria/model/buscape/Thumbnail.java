@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Thumbnail {
+public class Thumbnail implements Serializable {
     private int height;
 
     private int width;

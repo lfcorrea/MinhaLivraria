@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Offer {
+public class Offer implements Serializable {
     private long id;
 
     private long categoryid;

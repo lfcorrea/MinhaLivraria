@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Useraveragerating {
+public class Useraveragerating implements Serializable {
     private Links[] links;
 
     private String rating;

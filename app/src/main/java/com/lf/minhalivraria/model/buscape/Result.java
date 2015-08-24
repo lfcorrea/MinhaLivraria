@@ -1,9 +1,10 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Result {
-//    private Product[] products;
+public class Result implements Serializable{
+    //    private Product[] products;
     private Product product;
 
     private Category category;
@@ -135,6 +136,17 @@ public class Result {
 
     public void setTotalresultsreturned(int totalresultsreturned) {
         this.totalresultsreturned = totalresultsreturned;
+    }
+
+    public String getThumbnailUrl() {
+
+        String result = "";
+
+        if (getProduct() != null && getProduct().getThumbnail() != null && getProduct().getThumbnail().getUrl() != null) {
+            result = getProduct().getThumbnail().getUrl();
+        }
+
+        return result;
     }
 
     @Override

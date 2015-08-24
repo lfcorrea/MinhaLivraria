@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Contact {
+import java.io.Serializable;
+
+public class Contact implements Serializable {
     private String value;
 
     private String label;

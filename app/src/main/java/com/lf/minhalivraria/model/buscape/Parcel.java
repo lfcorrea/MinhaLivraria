@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Parcel {
+import java.io.Serializable;
+
+public class Parcel implements Serializable {
     private int interest;
 
     private double value;

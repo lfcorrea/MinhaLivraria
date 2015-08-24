@@ -10,4 +10,6 @@
     <string name="title_book_list">Books</string>
     <string name="title_book_detail">Book Detail</string>
     <string name="title_activity_book_info">BookInfoActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="btn_details">Details</string>
 </resources>

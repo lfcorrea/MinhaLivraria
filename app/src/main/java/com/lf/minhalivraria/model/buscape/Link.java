@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Link {
+import java.io.Serializable;
+
+public class Link implements Serializable {
     private String type;
 
     private String url;

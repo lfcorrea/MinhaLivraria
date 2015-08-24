@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Eonandyear {
+import java.io.Serializable;
+
+public class Eonandyear implements Serializable {
     private long lowestsetbit;
 
     public Eonandyear() {

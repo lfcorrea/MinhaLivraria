@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Xmlschematype {
+import java.io.Serializable;
+
+public class Xmlschematype implements Serializable {
     private String namespaceuri;
 
     private String prefix;

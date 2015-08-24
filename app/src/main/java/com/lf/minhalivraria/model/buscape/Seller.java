@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Seller {
+public class Seller implements Serializable {
     private int id;
 
     private boolean oneclickbuy;

@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Product {
+public class Product implements Serializable {
 
     private long totalsellers;
 

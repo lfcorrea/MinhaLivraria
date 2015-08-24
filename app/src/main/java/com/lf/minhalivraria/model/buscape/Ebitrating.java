@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Ebitrating {
+import java.io.Serializable;
+
+public class Ebitrating implements Serializable {
     private String rating;
 
     private long ratingid;

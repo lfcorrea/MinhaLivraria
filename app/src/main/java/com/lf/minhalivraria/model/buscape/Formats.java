@@ -1,6 +1,8 @@
 package com.lf.minhalivraria.model.buscape;
 
-public class Formats {
+import java.io.Serializable;
+
+public class Formats implements Serializable {
     private long height;
 
     private String width;

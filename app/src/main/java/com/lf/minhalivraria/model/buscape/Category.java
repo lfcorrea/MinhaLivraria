@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Category {
+public class Category implements Serializable {
     private long id;
 
     private Thumbnail thumbnail;

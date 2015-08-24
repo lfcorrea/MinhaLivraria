@@ -1,8 +1,9 @@
 package com.lf.minhalivraria.model.buscape;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Specification {
+public class Specification implements Serializable {
     private Item[] item;
 
     private Links[] links;
